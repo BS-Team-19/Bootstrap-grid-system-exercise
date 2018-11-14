@@ -1,13 +1,15 @@
 *{
     box-sizing: border-box;
+
 }
 /* EXTRA SMALL */
 @media (min-width: 6px) {
-    .col-4{border:1px solid black}
     .col-4 {
         max-width: 100%;
         padding: 0;
-
+    }
+    body{
+        background-color: lightgray;
     }
     .full  {
         width: 100%;
@@ -23,6 +25,7 @@
     }
     #white-bg{
         height: 7em;
+        background-color: white;
     }
     #logo {
         width: 40%;
@@ -30,8 +33,88 @@
         position: relative;
         left: 30%;
         top: -35%;
-
     }
+    #title-box{
+        background-color: lightgray;
+        font-family: 'Abel', sans-serif;
+    }
+    #title-box h1{
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: 3.5em;
+    }
+    #title-box ul{
+        text-align:center;
+        padding-left: 0;
+    }
+    ul#nav-links li{
+        display:inline;
+        padding:5%;
+    }
+    #vd-box{
+        background-color: lightgray;
+        font-family: 'Anton', sans-serif;
+    }
+    #vd-box h1 {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top:12%;
+        font-size:4em;
+    }
+    #vd-box h2{
+        text-align: center;
+        margin-bottom: 10%;
+        font-size: 2.5em;
+    }
+    #circle-grid{
+        font-family: 'Anton', sans-serif;
+    }
+    #circle-grid h1 {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top:12%;
+        font-size:4em;
+    }
+    .col{
+        text-align: center;
+        width:10em;
+        height:10em;
+        float:left;
+        margin:5%;
+        border:1em solid white;
+        border-radius:95%;
+    }
+    #top-left{
+        background-color: red;
+    }
+    #top-right{
+        background-color: orange;
+    }
+    #bottom-left{
+        background-color: green;
+    }
+    #bottom-right{
+        background-color: blue;
+    }
+    .dot {
+        font-family: 'Anton', sans-serif;
+        height: 12em;
+        width: 12em;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        border: .75em solid white;
+        text-align:center;
+        /*line-height: 12em;*/
+        margin-left: 1em;
+        margin-right: 1em;
+        color:white;
+        font-size: 1em;
+    }
+    #bottom-left, #bottom-right{
+        margin-top:1em;
+    }
+
 }
 /* SMALL */
 @media (min-width: 576px) and (max-width:768px) {
