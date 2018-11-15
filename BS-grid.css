@@ -331,7 +331,52 @@
         margin-top:0;
         margin-left: 1.5em;
     }
+    .bottom-nav{
+        display: none;
+    }
+    #apple-img{
+        display: none;
+    }
+    .navdot {
+        font-family: 'Anton', sans-serif;
+        height: 2em;
+        width: 2em;
+        /*max-width: 2em;*/
+        /*max-height: 2em;*/
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        text-align:center;
+        /*margin-left: .5em;*/
+        /*margin-right: .5em;*/
+        color:white;
+        /*font-size: 6px;*/
+        margin: 0;
+
+    }
+    .navdot>h1{
+        font-size: 9px;
+        line-height: 24px;
+
+    }
+    div.card.float-left{
+        margin: 5px
+    }
+    div.card.float-right{
+        margin: 5px
+    }
+    #selected-work>h1{
+        font-size: 16px;
+    }
+    p.card-text.d-inline{
+        font-size: 12px;
+    }
+    div.card-body{
+        padding: 0;
+
+    }
 }
+
 /* MEDIUM */
 @media (min-width: 769px) and (max-width:992px) {
 
