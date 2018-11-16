@@ -60,11 +60,11 @@
     #vd-box{
         background-color: #f0f0f0;
         font-family: 'Anton', sans-serif;
-        height: 168px;
-        width: 531px;
+        height: auto;
+        width: 100%;
         text-align:center;
-        position:relative;
-        left:1.5em;
+        /*position:relative;*/
+        /*left:1.5em;*/
 
     }
     #vd-text {
@@ -177,16 +177,16 @@
         font-size: 12px;
         margin: 0;
     }
-    #navdot1 {
+    .navdot.navdot1 {
     background-color:#D55F46;
     }
-    #navdot2{
+    .navdot.navdot2{
     background-color:#DEA03D;
     }
-    #navdot3{
+    .navdot.navdot3{
     background-color:#88AE74;
     }
-    #navdot4{
+    .navdot.navdot4{
     background-color: #4BA8A9;
     }
     .navbar{
@@ -226,28 +226,47 @@
 @media (min-width: 576px) and (max-width:768px) {
     .col-4 {
     }
+    .row{ height:5em;}
     div#logo-box.container{
         width:100%;
         margin:0;
         max-width:none;
+
     }
     div#white-bg.row.full{
         margin-left:0;
         margin-right:0;
+        text-align:center;
     }
     #nav-links2 {
         display:inline;
+        position:absolute;
+        top:45%;
+        left:5%;
     }
     #nav-links2 li{
         list-style: none;
         display:inline;
+        padding:1.5em;
+        text-align:center;
     }
     #nav-links3 {
         display:inline;
+        position:absolute;
+        top:45%;
+        text-align:center;
+        right:5%;
+
     }
     #nav-links3 li{
         list-style: none;
         display:inline;
+        padding:1.5em;
+        padding-bottom: 3em;
+        margin-top:-10%;
+    }
+    ul#nav-links3>li{
+        margin-bottom: 3em;
     }
     #nav-links{
         display:none;
@@ -257,7 +276,7 @@
         height: auto;
         position: relative;
         /*left: 30%;messing with positioning for some reason.*/
-        top: -35%;
+        top: -70%;
     }
     #vd-box h1 {
         text-align: center;
@@ -275,11 +294,10 @@
         margin-right: auto;
     }
     div#white-bg.full{
-
     }
-    #white-bg {
+    #white-bg{
+        height: 4em;
         background-color: white;
-        line-height: normal;
     }
     #top-left{
         background-color: #D55F46;
@@ -369,6 +387,7 @@
     div.card.float-right{
         margin: 5px
     }
+    #selected-work{margin-top:0;}
     #selected-work>h1{
         font-size: 16px;
     }
@@ -385,10 +404,181 @@
 @media (min-width: 769px) and (max-width:992px) {
 
     .col-4 {
-        border: 5px solid black;
-        background-color: blue;
+    }
+    .row{ height:5em;}
+    div#logo-box.container{
+        width:100%;
+        margin:0;
+        max-width:none;
+    }
+    div#white-bg.row.full{
+        margin-left:0;
+        margin-right:0;
+        text-align:center;
+    }
+    #nav-links2 {
+        display:inline;
+        position:absolute;
+        top:45%;
+        left:55%;
+    }
+    #nav-links2 li{
+        list-style: none;
+        display:inline;
+        padding:1em;
+        text-align:center;
+    }
+    #nav-links3 {
+        display:inline;
+        position:absolute;
+        top:45%;
+        text-align:center;
+        right:2%;
+
+    }
+    #nav-links3 li{
+        list-style: none;
+        display:inline;
+        padding:1em;
+        padding-bottom: 3em;
+        margin-top:-10%;
+    }
+    ul#nav-links3>li{
+        margin-bottom: 3em;
+    }
+    #nav-links{
+        display:none;
+    }
+    #logo {
+        width: 17%;
+        height: auto;
+        position: relative;
+        /*left: 30%;messing with positioning for some reason.*/
+        top: -50%;
+        left:-35%;
+    }
+    #vd-box h1 {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top:12%;
+        font-size:2.3em;
+        font-family: 'Anton', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #vd-box {
+        position:relative;
+        /*left:15%;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div#white-bg.full{
+    }
+    #white-bg{
+        height: 4em;
+        background-color: white;
+    }
+    #top-left{
+        background-color: #D55F46;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    #top-right{
+        background-color: #DEA03D;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    #bottom-left{
+        background-color: #88AE74;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    #bottom-right{
+        background-color: #4BA8A9;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .dot {
+        font-family: 'Anton', sans-serif;
+        height: 7em;
+        width: 7em;
+        max-width: 7em;
+        max-height: 7em;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        border: 7px solid white;
+        text-align:center;
+        margin-left: 1em;
+        margin-right: 1em;
+        color:white;
+    }
+    #circle-grid h1 {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top:12%;
+        font-size:1.5em;
+    }
+    body{
+
+    }
+    * {
+        font-family: 'Abel', sans-serif;
+        margin:0;
+        padding:0;
+    }
+    .row{margin:0;}
+    #circle-grid {
+        margin-top:0;
+        margin-left: 1.5em;
+    }
+    .bottom-nav{
+        display: none;
+    }
+    #apple-img{
+        display: none;
+    }
+    .navdot {
+        font-family: 'Anton', sans-serif;
+        height: 2em;
+        width: 2em;
+        /*max-width: 2em;*/
+        /*max-height: 2em;*/
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        text-align:center;
+        /*margin-left: .5em;*/
+        /*margin-right: .5em;*/
+        color:white;
+        /*font-size: 6px;*/
+        margin: 0;
+
+    }
+    .navdot>h1{
+        font-size: 9px;
+        line-height: 24px;
+
+    }
+    div.card.float-left{
+        margin: 5px
+    }
+    div.card.float-right{
+        margin: 5px
+    }
+    #selected-work{margin-top:0;}
+    #selected-work>h1{
+        font-size: 16px;
+    }
+    p.card-text.d-inline{
+        font-size: 12px;
+    }
+    div.card-body{
+        padding: 0;
+
     }
 }
+
 /* EXTRA LARGE */
 
 @media (min-width: 1201px) {
